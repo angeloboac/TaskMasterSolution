@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon"  type="x-icon"href="test.jpg.png">
+    
+    
+<body>
+
+
+    </h1>
+    <div class="container" id="register-container">
+        <img src="test.jpg.png" class="logo1">
+        <h1>Register</h1>
+        <div class="input-container">
+            <!-- <img src="test.jpg.png"> -->
+            <input type="text" id="register-username" placeholder="Username">
+            <br>
+            <input type="password" id="register-password" placeholder="Password">
+            <br>
+            <button id="register-btn">Register</button>
+        </div>
+        <p>Already have an account? <button id="go-to-login-btn">Login</button></p>
+    </div>
+    <div class="container" id="login-container" style="display: none;">
+        <img src="test.jpg.png" class="logo1">
+        <h1>Login</h1>
+        <div class="input-container">
+            <input type="text" id="login-username" placeholder="Username">
+            <br>
+            <input type="password" id="login-password" placeholder="Password">
+            <br>
+            <button id="login-btn">Login</button>
+        </div>
+        <p>Don't have an account? <button id="go-to-register-btn">Register</button></p>
+    </div>
+    <div class="container" id="todo-container" style="display: none">
+        <img src="test.jpg.png" class="logo">
+        <h1>Task Master Solution</h1>
+        <button id="logout-btn">Logout</button>
+        <!-- <button id="change-theme-btn">Change Theme</button> -->
+        <div class="input-container todo-container">
+            <textarea id="new-task" placeholder="Add a new task" cols="10" rows="5"></textarea>
+            <!-- <input type="datetime-local" id="task-time"> -->
+            <select id="task-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task-btn">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+        <h2>Archived Tasks</h2>
+        <ul id="archived-list"></ul>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
